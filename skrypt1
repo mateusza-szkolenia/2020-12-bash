@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# autor: Mateusz Adamowski
+# data: 2020-12-02
+
+imie=Mateusz
+dzisiaj=$(date +%Y-%m-%d)
+dzis=`date +%Y-%m-%d`
+
+# powitanie
+echo Dzien dobry,      $imie
+echo "Dzien dobry,      $imie"
+echo 'Dzien dobry,     $imie'
+echo "Dzien dobry, ${imie}u"
+echo "Zaczynamy szkolenie o tematyce ($xxx) "
+echo "Dzisiaj jest: $( date +%Y-%m-%d ) i juz"
+echo "Dzisiaj jest: $dzisiaj i tyle"
+echo "Dzisiaj jest: $dzis i tyle"
+
+# wyswietlenie biezacej daty
+date
+
+#echo "Do roboty"
+

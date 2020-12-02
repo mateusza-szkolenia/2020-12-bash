@@ -1,0 +1,2 @@
+Napisac skrypt, ktory skopiuje plik /etc/passwd do pliku passwd-kopia-DATA
+gdzie DATA to biezaca data w formacie YYYY-MM-DD
