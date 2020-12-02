@@ -4,7 +4,7 @@ read -p "Jak sie nazywasz: " imie
 
 echo "Dzien dobry, $imie"
 
-if [ $imie == Mateusz ]
+if [ "x$imie" == "xMateusz" ]
 then
 	echo "Witaj, mistrzu"
 	echo "..."
