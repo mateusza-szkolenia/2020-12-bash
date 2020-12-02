@@ -4,7 +4,7 @@ cd skrzynka
 
 for u in $( cat uzytkownicy.txt )
 do
-	for n in 3 2 1 KONIEC
+	for n in 1 2 3 KONIEC
 	do
 		if [ "x$n" == "xKONIEC" ] 
 		then
