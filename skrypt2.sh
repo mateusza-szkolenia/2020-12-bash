@@ -1,7 +1,6 @@
 #!/bin/bash
 
-read -p "Podaj imie: " imie
-read -p "Podaj nazwisko: " nazwisko
+read -p "Jak sie nazywasz? " imie nazwisko
 
 echo "Dzien dobry, $imie $nazwisko"
 echo "Imie: $imie"
