@@ -9,4 +9,6 @@ then
 	echo "Witaj, mistrzu"
 	echo "..."
 	echo "..."
+else
+	echo "Witaj, nieznajomy"
 fi
