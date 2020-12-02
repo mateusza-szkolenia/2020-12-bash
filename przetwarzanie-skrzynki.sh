@@ -1,20 +1,29 @@
 #!/bin/bash
 
-for u in ula ola iza ala
-do
-	if [ -e "skrzynka/${u}3.txt" ]
-	then
-		cat "skrzynka/${u}3.txt" | tr a-z A-Z
-	elif [ -e "skrzynka/${u}2.txt" ]
-	then
-		cat "skrzynka/${u}1.txt" | tr a-z A-Z
-	elif [ -e "skrzynka/${u}1.txt" ]
-	then
-		cat "skrzynka/${u}1.txt" | tr a-z A-Z
-	else
-		echo "Brak jakiegokolwiek pliku od $u"
-	fi
+cd skrzynka
 
+for u in $( cat uzytkownicy.txt )
+do
+	for n in 3 2 1 KONIEC
+	do
+		if [ "x$n" == "xKONIEC" ] 
+		then
+			echo "Brak plików od $u"
+
+			# w tym szczególnym przypadku można użyć albo break albo continue
+			break
+		fi
+
+		plik="${u}${n}.txt"
+
+		echo -n "Sprawdzam [$plik]: "
+		[ -e "$plik" ] && echo "Istnieje" || echo "Brak"
+
+		[ -e "$plik" ] || continue
+		echo "Przetwarzanie $plik"
+		[ -e "$plik" ] && break
+	done
 
 done
+
 
