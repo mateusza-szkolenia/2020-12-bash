@@ -16,3 +16,11 @@ echo "Twoj wiek to: $wiek"
 if [ "$wiek" -ge "18" ]; then
 	echo "Jestes pelnoletni"
 fi
+
+#	-gt	>
+#	-ge	>=
+#	-lt	<
+#	-le	<=
+#	-eq	==
+#	-ne	!=
+
