@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Podaj imie:"
+echo -n "Podaj imie:"
 read imie
 echo "Dzien dobry, $imie"
 
