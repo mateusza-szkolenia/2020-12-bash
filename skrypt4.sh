@@ -9,6 +9,10 @@ read -p 'Podaj rok urodzenia: ' ur
 # to juz nie zadziala, jesli x nie jest liczba:
 # wiek=$(( $rok - $ur + $x ))
 
-#wiek=$(( rok - ur ))
+wiek=$(( rok - ur ))
 
 echo "Twoj wiek to: $wiek"
+
+if [ "$wiek" -ge "18" ]; then
+	echo "Jestes pelnoletni"
+fi
