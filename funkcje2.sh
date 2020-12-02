@@ -12,5 +12,10 @@ echo "Liczba parametrów: $#"
 echo "Par 1: $1"
 echo "Par 2: $2"
 
+# tak będzie źle:
+abc $@
+
+# tak będzie dobrze:
 abc "$@"
+
 #mkdir "$@"
